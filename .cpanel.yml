@@ -1,0 +1,5 @@
+---
+deployments:
+  - deployment:
+      branch: master
+      destination: public_html 
