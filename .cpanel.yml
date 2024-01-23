@@ -1,5 +1,5 @@
 ---
 deployments:
-  - deployment:
-      branch: master
-      destination: public_html 
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp * $DEPLOYPATH
