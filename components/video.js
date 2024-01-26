@@ -26,12 +26,7 @@ const Video = () => {
             </button>
           )}
           {playVideo && (
-            <iframe
-              src="https://youtu.be/HJuwyiYImxc?si=d-Oz6di_4yIVUQ65"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HJuwyiYImxc?si=fu4AWUbxj-EzMg95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           )}
         </div>
       </div>
