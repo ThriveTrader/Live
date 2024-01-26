@@ -57,7 +57,6 @@ const Home = () => {
       <Benefits data={benefitOne} />
       </article>
       <br></br>
-      <br></br>
       <article className="rounded-xl border border-black w-full bggg ">
       <SectionTitle pretitle="" title="JOIN MY TELEGRAM"></SectionTitle>
       <br></br>
