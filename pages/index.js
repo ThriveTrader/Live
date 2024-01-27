@@ -32,12 +32,12 @@ const Home = () => {
         <Hero />
       </article>
       <br></br>
-      <article className="rounded-xl border border-black  w-full bggg p-4">
-        <SectionTitle
+    <article className="rounded-xl border border-black  w-full bggg ">
+          <SectionTitle
           pretitle=""
           title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME"
         ></SectionTitle>
-        <Imager />
+      <Video />
       </article>
       <br></br>
       <article className="rounded-xl border border-black  w-full bggg ">
@@ -47,9 +47,11 @@ const Home = () => {
       ></Sect>
       </article>
       <br></br>
-      <article className="rounded-xl border border-black  w-full bggg ">
+      
+      <article className="rounded-xl border border-black  w-full bggg p-4">
+        
       <SectionTitle pretitle="" title="RESULTS"></SectionTitle>
-      <Video />
+        <Imager />
       </article>
       <br></br>
       <article className="rounded-xl border border-black w-full bggg ">
