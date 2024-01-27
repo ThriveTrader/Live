@@ -4,25 +4,30 @@ import Container from "./container";
 const Video = () => {
   const [playVideo, setPlayVideo] = useState(false);
 
-  const thumbnailUrl = "URL_TO_YOUR_THUMBNAIL_IMAGE"; // Replace with the actual URL of your video thumbnail
-
   return (
     <Container>
       <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl relative">
         <div
           onClick={() => setPlayVideo(!playVideo)}
-          className="relative bg-transparent cursor-pointer aspect-w-16 aspect-h-9">
-          {!playVideo && (
-            <>
-              <img
-                src={thumbnailUrl}
-                alt="Video Thumbnail"
-                className="w-full h-full object-cover"
-              />
-              <button className="absolute inset-0 flex items-center justify-center w-full h-full text-white">
+          className="relative bg-transparent cursor-pointer aspect-w-16 aspect-h-9 overflow-hidden"
+        >
+          {playVideo ? (
+            <iframe
+              title="Video Player"
+              src="https://player.vimeo.com/video/906950726?h=ca75fc5c00"
+              width="640"
+              height="564"
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            ></iframe>
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <button className="w-16 h-16 lg:w-28 lg:h-28 text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-16 h-16 lg:w-28 lg:h-28"
+                  className="w-full h-full"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -34,19 +39,7 @@ const Video = () => {
                 </svg>
                 <span className="sr-only">Play Video</span>
               </button>
-            </>
-          )}
-          {playVideo && (
-            <iframe
-              title="Video Player"
-              src="https://player.vimeo.com/video/906950726?h=ca75fc5c00"
-              width="640"
-              height="564"
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
-            ></iframe>
+            </div>
           )}
         </div>
       </div>
