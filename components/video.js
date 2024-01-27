@@ -24,7 +24,7 @@ const Video = () => {
             ></iframe>
           ) : (
             <img
-              src="/T1"
+              src="/T1.png"
               alt="Thumbnail for Video 1"
               className="absolute inset-0 object-cover w-full h-full"
             />
@@ -47,7 +47,7 @@ const Video = () => {
             ></iframe>
           ) : (
             <img
-              src="/T2"
+              src="/T2.png"
               alt="Thumbnail for Video 2"
               className="absolute inset-0 object-cover w-full h-full"
             />
