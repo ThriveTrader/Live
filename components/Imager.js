@@ -2,7 +2,7 @@
 
 import Caro from "./Caro";
 
-const Slides = ["/Slides/1.png", "/Slides/1.png"];
+const Slides = ["/Slides/1.png", "/Slides/2.png", "/Slides/3.png"];
 
 const Imager = () => {
   return (
