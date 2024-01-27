@@ -23,23 +23,11 @@ const Video = () => {
               style={{ position: "absolute", top: 0, left: 0 }}
             ></iframe>
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="w-16 h-16 lg:w-28 lg:h-28 text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-full h-full"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Play Video 1</span>
-              </button>
-            </div>
+            <img
+              src="/T1"
+              alt="Thumbnail for Video 1"
+              className="absolute inset-0 object-cover w-full h-full"
+            />
           )}
         </div>
 
@@ -58,23 +46,11 @@ const Video = () => {
               style={{ position: "absolute", top: 0, left: 0 }}
             ></iframe>
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="w-16 h-16 lg:w-28 lg:h-28 text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-full h-full"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Play Video 2</span>
-              </button>
-            </div>
+            <img
+              src="/T2"
+              alt="Thumbnail for Video 2"
+              className="absolute inset-0 object-cover w-full h-full"
+            />
           )}
         </div>
       </div>
