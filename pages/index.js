@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Head>
         <title>Thrive Trader</title>
-        <meta name="description" content="Learn Coding with Abhishek" />
+        <meta name="description" content="Thrive Trading" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -35,7 +35,7 @@ const Home = () => {
     <article className="rounded-xl border border-black  w-full bggg ">
           <SectionTitle
           pretitle=""
-          title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME"
+          title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME!"
         ></SectionTitle>
       <Video />
       </article>
